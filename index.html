@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+    <title>Typing War</title>
+    <style>
+            #footer {
+               position: fixed;
+               left: 0;
+               bottom: 0;
+               width: 100%;
+               background-color: lightgrey;
+            }
+    </style>
+</head>
+<body style="background-color: white">
+    <nav style="background-color: gray;">
+        <div class="nav-wrapper">
+          <span class="brand-logo center">Typing War</span>
+        </div>
+      </nav>
+
+    <br><br>
+    <div class="container text-center">
+        <h1 id="word" style="font-family: 'Source Sans Pro', sans-serif;
+        font-size: 50px;">Initial</h1><br>
+
+        <div class="row">
+            <div class="input-field col s6">
+                <input style="width: 400px;" type="text" id="textbox" autofocus><br>
+            </div>
+        </div>
+        <span>Time:</span>
+        <span id="time">5</span><br>
+        <span>Score:</span>
+        <span id="score">0</span><br>
+        <span id="status" style="color: red; font-weight: bold;"></span><br><br>
+    </div>
+    
+    <div id="reset" class="text-center">
+        <button id="restart" class="waves-effect waves-light btn"><i class="material-icons right">replay</i>Restart</button>
+    </div><br>
+
+    <div class="container text-center" style="width: 450px">
+    <div class="row">
+            <div class="col s12 m6">
+              <div class="card blue-grey lighten-1">
+                <div class="card-content white-text">
+                  <span class="card-title" style="font-size: 26px;">Instructions:</span><br>
+                  <p>Type the given word before the time expires. For each currect word you type,  you are going to get 1 point.</p>
+                </div>
+              </div>
+            </div>
+    </div></div>
+
+    <footer class="page-footer" id="footer">
+        <div class="container">
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a href="https://twitter.com/impavan17" style="text-decoration : none; color : #000000;">
+                    <i class="fa fa-twitter" style="font-size:21px"> </i>
+                    </a>
+                </li>
+                    <li class="list-inline-item">
+                    <a href="https://github.com/iamPavan17" style="text-decoration : none; color : #000000;">
+                    <i class="fa fa-github" style="font-size:21px"> </i>
+                    </a>
+                </li>
+                </ul>
+            </div>
+            <div class="footer-copyright" style="background-color: gray">
+              <div class="container text-center">
+                    © 2018 Copyright Reserved.
+              </div>
+            </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
